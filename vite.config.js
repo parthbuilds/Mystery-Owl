@@ -5,7 +5,7 @@ export default defineConfig({
   root: "source", 
   build: {
     outDir: "../build", 
-    base: './',         
+    base: '/',         
     emptyOutDir: true
   },
   plugins: [
