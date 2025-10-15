@@ -317,7 +317,7 @@ ul.list li::before {
 }
 
 .section-content--bg1 {
-  background-image: url("../../assets/img/samples/section-bg-img1.jpg");
+  background-image: url("../..//assets/img/samples/section-bg-img1.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -675,7 +675,7 @@ ul.list li::before {
 }
 
 .section-media--bg1 {
-  background-image: url("../../assets/img/samples/video-placeholder.jpg");
+  background-image: url("../..//assets/img/samples/video-placeholder.jpg");
 }
 
 /*=====  End of #Section  ======*/
@@ -3693,19 +3693,19 @@ select.form-control-lg:not([size]):not([multiple]) {
 }
 
 .main-slider__item--img-1 {
-  background-image: url("../../assets/img/samples/slide-1.jpg");
+  background-image: url("../..//assets/img/samples/slide-1.jpg");
 }
 
 .main-slider__item--img-2 {
-  background-image: url("../../assets/img/samples/slide-2.jpg");
+  background-image: url("../..//assets/img/samples/slide-2.jpg");
 }
 
 .main-slider__item--img-3 {
-  background-image: url("../../assets/img/samples/slide-3.jpg");
+  background-image: url("../..//assets/img/samples/slide-3.jpg");
 }
 
 .main-slider__item--img-4 {
-  background-image: url("../../assets/img/samples/slide-4.jpg");
+  background-image: url("../..//assets/img/samples/slide-4.jpg");
 }
 
 /* Slide Content */
@@ -5481,7 +5481,7 @@ body.search-active .search-form-control .search-form-toggler__icon {
 =============================================*/
 .page-heading {
   text-align: center;
-  background-image: url("../../assets/img/samples/slide-1.jpg");
+  background-image: url("../..//assets/img/samples/slide-1.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5678,7 +5678,7 @@ body.search-active .search-form-control .search-form-toggler__icon {
  *
  */
 .footer {
-  background-image: url("../../assets/img/samples/footer-bg.jpg");
+  background-image: url("../..//assets/img/samples/footer-bg.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -6387,15 +6387,15 @@ Images
 }
 
 .widget_posts .posts-list__item--post-1::before {
-  background-image: url("../../assets/img/samples/post-widget-1.jpg");
+  background-image: url("../..//assets/img/samples/post-widget-1.jpg");
 }
 
 .widget_posts .posts-list__item--post-2::before {
-  background-image: url("../../assets/img/samples/post-widget-2.jpg");
+  background-image: url("../..//assets/img/samples/post-widget-2.jpg");
 }
 
 .widget_posts .posts-list__item--post-3::before {
-  background-image: url("../../assets/img/samples/post-widget-3.jpg");
+  background-image: url("../..//assets/img/samples/post-widget-3.jpg");
 }
 
 /**
@@ -7921,7 +7921,7 @@ Images
 
 .rooms--blocks .room {
   width: 100%;
-  background-image: url("../../assets/img/samples/room-block-img-1.jpg");
+  background-image: url("../..//assets/img/samples/room-block-img-1.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -7993,19 +7993,19 @@ Images
 }
 
 .rooms--blocks .room--room-2 {
-  background-image: url("../../assets/img/samples/room-block-img-2.jpg");
+  background-image: url("../..//assets/img/samples/room-block-img-2.jpg");
 }
 
 .rooms--blocks .room--room-3 {
-  background-image: url("../../assets/img/samples/room-block-img-3.jpg");
+  background-image: url("../..//assets/img/samples/room-block-img-3.jpg");
 }
 
 .rooms--blocks .room--room-4 {
-  background-image: url("../../assets/img/samples/room-block-img-4.jpg");
+  background-image: url("../..//assets/img/samples/room-block-img-4.jpg");
 }
 
 .rooms--blocks .room--room-5 {
-  background-image: url("../../assets/img/samples/room-block-img-5.jpg");
+  background-image: url("../..//assets/img/samples/room-block-img-5.jpg");
 }
 
 /*=====  End of #Rooms  ======*/
@@ -8072,23 +8072,23 @@ Images
 }
 
 .room-slider__item--img-1 {
-  background-image: url("../../assets/img/samples/room-single-1.jpg");
+  background-image: url("../..//assets/img/samples/room-single-1.jpg");
 }
 
 .room-slider__item--img-2 {
-  background-image: url("../../assets/img/samples/room-single-2.jpg");
+  background-image: url("../..//assets/img/samples/room-single-2.jpg");
 }
 
 .room-slider__item--img-3 {
-  background-image: url("../../assets/img/samples/room-single-3.jpg");
+  background-image: url("../..//assets/img/samples/room-single-3.jpg");
 }
 
 .room-slider__item--img-4 {
-  background-image: url("../../assets/img/samples/room-single-4.jpg");
+  background-image: url("../..//assets/img/samples/room-single-4.jpg");
 }
 
 .room-slider__item--img-5 {
-  background-image: url("../../assets/img/samples/room-single-5.jpg");
+  background-image: url("../..//assets/img/samples/room-single-5.jpg");
 }
 
 /*----------  Room Title  ----------*/
