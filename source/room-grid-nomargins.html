@@ -13,9 +13,9 @@
 
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
-	<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/favicon-120.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/favicon-152.png">
+	<link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/favicon-152.png">
 
 	<!-- Mobile Specific Metas
 	================================================== -->
@@ -28,22 +28,22 @@
 	<!-- CSS
 	================================================== -->
 	<!-- Vendor CSS -->
-	<link href="/assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-	<link href="/assets/vendor/animate/animate.css" rel="stylesheet">
-	<link href="/assets/vendor/aos/aos.css" rel="stylesheet">
-	<link href="/assets/font-icon/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-	<link href="/assets/font-icon/ionicons/css/ionicons.min.css" rel="stylesheet">
-	<link href="/assets/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-	<link href="/assets/vendor/slick/slick.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/vendor/animate/animate.css" rel="stylesheet">
+	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+	<link href="assets/font-icon/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+	<link href="assets/font-icon/ionicons/css/ionicons.min.css" rel="stylesheet">
+	<link href="assets/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+	<link href="assets/vendor/slick/slick.css" rel="stylesheet">
 
 	<!-- Template CSS-->
-	<link href="/assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
 
 	<!-- Booked CSS-->
-	<link href="/assets/css/booked.css" rel="stylesheet">
+	<link href="assets/css/booked.css" rel="stylesheet">
 
 	<!-- Custom CSS-->
-	<link href="/assets/css/custom.css" rel="stylesheet">
+	<link href="assets/css/custom.css" rel="stylesheet">
 
 </head>
 <body>
@@ -64,7 +64,7 @@
 		
 			<!-- Logo - Image Based -->
 			<div class="header__logo header__logo--img">
-				<a href="index.html"><img src="/assets/img/logo.png" srcset="/assets/img/logo@2x.png 2x" alt="Escapium"></a>
+				<a href="index.html"><img src="assets/img/logo.png" srcset="assets/img/logo@2x.png 2x" alt="Escapium"></a>
 			</div>
 			<!-- Logo - Image Based / End -->
 		
@@ -89,8 +89,8 @@
 								<ul class="main-nav__sub-2">
 									<li class=""><a href="room-grid-2cols.html">2 cols</a></li>
 									<li class=""><a href="room-grid-3cols.html">3 cols</a></li>
-									<li class="active"><a href="room-grid-4cols.html">4 cols</a></li>
-									<li class=""><a href="room-grid-nomargins.html">No Margins</a></li>
+									<li class=""><a href="room-grid-4cols.html">4 cols</a></li>
+									<li class="active"><a href="room-grid-nomargins.html">No Margins</a></li>
 								</ul>
 							</li>
 							<li class=""><a href="room-modern.html">Rooms - Modern</a></li>
@@ -179,7 +179,7 @@
 					<ol class="breadcrumb page-heading__breadcrumb">
 						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
 						<li class="breadcrumb-item"><a href="#">Rooms</a></li>
-						<li class="breadcrumb-item active" aria-current="page">Grid 4 Cols</li>
+						<li class="breadcrumb-item active" aria-current="page">No Margins</li>
 					</ol>
 				</div>
 			</div>
@@ -202,25 +202,30 @@
 				</ul>
 				<!-- Filter / End -->
 		
-				<!-- Rooms Grid - 4 cols -->
-				<div class="row rooms rooms--grid js-rooms--grid">
+				<!-- Rooms Grid - 3 cols (No Margins) -->
+				<div class="row rooms rooms--grid rooms--grid-space rooms--has-icon js-rooms--grid no-gutters">
 		
 					<!-- Room #1 -->
-					<div class="room col-sm-6 col-md-3 room--category-normal">
+					<div class="room col-sm-6 col-md-4 room--category-normal">
 						<div class="room__inner">
 							<div class="room__body">
 								<!-- Rating -->
-								<div class="room__complexity rating-icons">
-									<div class="rating-icons__placeholder">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+								<div class="rating-bars room__complexity">
+									<div class="rating-bars__bars rating-bars__bars-3">
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
 									</div>
-									<div class="rating-icons__active">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+									<div class="rating-bars__numbers">
+										<span class="rating-bars__number-current">3</span>
+										<div class="rating-bars__number-overall">5</div>
 									</div>
 								</div>
 								<!-- Rating / End -->
 								<!-- Title -->
-								<h2 class="room__title"><a href="room-single.html">Magic Imporium</a></h2>
+								<h2 class="room__title"><a href="room-single.html">Magic Imporium <span class="badge badge-primary"><i class="far fa-clock"></i></span></a></h2>
 								<!-- Title / End -->
 								<!-- Meta -->
 								<div class="room__meta">
@@ -231,14 +236,14 @@
 										<i class="icon-clock"></i> 60
 									</div>
 									<div class="room__meta-item">
-										<i class="ion-location"></i> NY 3031
+										<i class="ion-location"></i> New York 3031
 									</div>
 								</div>
 								<!-- Meta / End -->
 							</div>
 							<!-- Image -->
 							<figure class="room__img">
-								<a href="room-single.html"><img src="/assets/img/samples/room-grid-4-img1.jpg" alt=""></a>
+								<a href="room-single.html"><img src="assets/img/samples/room-grid-3-img1.jpg" alt=""></a>
 							</figure>
 							<!-- Image / End -->
 						</div>
@@ -246,16 +251,21 @@
 					<!-- Room #1 / End -->
 		
 					<!-- Room #2 -->
-					<div class="room col-sm-6 col-md-3 room--category-hard">
+					<div class="room col-sm-6 col-md-4 room--category-hard">
 						<div class="room__inner">
 							<div class="room__body">
 								<!-- Rating -->
-								<div class="room__complexity rating-icons">
-									<div class="rating-icons__placeholder">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+								<div class="rating-bars room__complexity">
+									<div class="rating-bars__bars rating-bars__bars-4">
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
 									</div>
-									<div class="rating-icons__active">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+									<div class="rating-bars__numbers">
+										<span class="rating-bars__number-current">4</span>
+										<div class="rating-bars__number-overall">5</div>
 									</div>
 								</div>
 								<!-- Rating / End -->
@@ -271,14 +281,14 @@
 										<i class="icon-clock"></i> 60
 									</div>
 									<div class="room__meta-item">
-										<i class="ion-location"></i> LA 20198
+										<i class="ion-location"></i> Los Angeles 20198
 									</div>
 								</div>
 								<!-- Meta / End -->
 							</div>
 							<!-- Image -->
 							<figure class="room__img">
-								<a href="room-single.html"><img src="/assets/img/samples/room-grid-4-img2.jpg" alt=""></a>
+								<a href="room-single.html"><img src="assets/img/samples/room-grid-3-img2.jpg" alt=""></a>
 							</figure>
 							<!-- Image / End -->
 						</div>
@@ -286,21 +296,26 @@
 					<!-- Room #2 / End -->
 		
 					<!-- Room #3 -->
-					<div class="room col-sm-6 col-md-3 room--category-easy">
+					<div class="room col-sm-6 col-md-4 room--category-easy">
 						<div class="room__inner">
 							<div class="room__body">
 								<!-- Rating -->
-								<div class="room__complexity rating-icons">
-									<div class="rating-icons__placeholder">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+								<div class="rating-bars room__complexity">
+									<div class="rating-bars__bars rating-bars__bars-2">
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
 									</div>
-									<div class="rating-icons__active">
-										<i class="ion-locked"></i><i class="ion-locked"></i>
+									<div class="rating-bars__numbers">
+										<span class="rating-bars__number-current">2</span>
+										<div class="rating-bars__number-overall">5</div>
 									</div>
 								</div>
 								<!-- Rating / End -->
 								<!-- Title -->
-								<h2 class="room__title"><a href="room-single.html">Burlesque</a></h2>
+								<h2 class="room__title"><a href="room-single.html">Burlesque <span class="badge badge-secondary"><i class="fas fa-history"></i></span></a></h2>
 								<!-- Title / End -->
 								<!-- Meta -->
 								<div class="room__meta">
@@ -311,14 +326,14 @@
 										<i class="icon-clock"></i> 60
 									</div>
 									<div class="room__meta-item">
-										<i class="ion-location"></i> BH 90210
+										<i class="ion-location"></i> Beverly Hills 90210
 									</div>
 								</div>
 								<!-- Meta / End -->
 							</div>
 							<!-- Image -->
 							<figure class="room__img">
-								<a href="room-single.html"><img src="/assets/img/samples/room-grid-4-img3.jpg" alt=""></a>
+								<a href="room-single.html"><img src="assets/img/samples/room-grid-3-img3.jpg" alt=""></a>
 							</figure>
 							<!-- Image / End -->
 						</div>
@@ -326,16 +341,21 @@
 					<!-- Room #3 / End -->
 		
 					<!-- Room #4 -->
-					<div class="room col-sm-6 col-md-3 room--category-hard">
+					<div class="room col-sm-6 col-md-4 room--category-hard">
 						<div class="room__inner">
 							<div class="room__body">
 								<!-- Rating -->
-								<div class="room__complexity rating-icons">
-									<div class="rating-icons__placeholder">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+								<div class="rating-bars room__complexity">
+									<div class="rating-bars__bars rating-bars__bars-5">
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
 									</div>
-									<div class="rating-icons__active">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+									<div class="rating-bars__numbers">
+										<span class="rating-bars__number-current">5</span>
+										<div class="rating-bars__number-overall">5</div>
 									</div>
 								</div>
 								<!-- Rating / End -->
@@ -351,14 +371,14 @@
 										<i class="icon-clock"></i> 60
 									</div>
 									<div class="room__meta-item">
-										<i class="ion-location"></i> NY 3031
+										<i class="ion-location"></i> New York 3031
 									</div>
 								</div>
 								<!-- Meta / End -->
 							</div>
 							<!-- Image -->
 							<figure class="room__img">
-								<a href="room-single.html"><img src="/assets/img/samples/room-grid-4-img4.jpg" alt=""></a>
+								<a href="room-single.html"><img src="assets/img/samples/room-grid-3-img4.jpg" alt=""></a>
 							</figure>
 							<!-- Image / End -->
 						</div>
@@ -366,16 +386,21 @@
 					<!-- Room #4 / End -->
 		
 					<!-- Room #5 -->
-					<div class="room col-sm-6 col-md-3 room--category-easy">
+					<div class="room col-sm-6 col-md-4 room--category-easy">
 						<div class="room__inner">
 							<div class="room__body">
 								<!-- Rating -->
-								<div class="room__complexity rating-icons">
-									<div class="rating-icons__placeholder">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+								<div class="rating-bars room__complexity">
+									<div class="rating-bars__bars rating-bars__bars-2">
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
 									</div>
-									<div class="rating-icons__active">
-										<i class="ion-locked"></i><i class="ion-locked"></i>
+									<div class="rating-bars__numbers">
+										<span class="rating-bars__number-current">2</span>
+										<div class="rating-bars__number-overall">5</div>
 									</div>
 								</div>
 								<!-- Rating / End -->
@@ -391,14 +416,14 @@
 										<i class="icon-clock"></i> 60
 									</div>
 									<div class="room__meta-item">
-										<i class="ion-location"></i> NY 3031
+										<i class="ion-location"></i> New York 3031
 									</div>
 								</div>
 								<!-- Meta / End -->
 							</div>
 							<!-- Image -->
 							<figure class="room__img">
-								<a href="room-single.html"><img src="/assets/img/samples/room-grid-4-img5.jpg" alt=""></a>
+								<a href="room-single.html"><img src="assets/img/samples/room-grid-3-img5.jpg" alt=""></a>
 							</figure>
 							<!-- Image / End -->
 						</div>
@@ -406,16 +431,21 @@
 					<!-- Room #5 / End -->
 		
 					<!-- Room #6 -->
-					<div class="room col-sm-6 col-md-3 room--category-easy">
+					<div class="room col-sm-6 col-md-4 room--category-easy">
 						<div class="room__inner">
 							<div class="room__body">
 								<!-- Rating -->
-								<div class="room__complexity rating-icons">
-									<div class="rating-icons__placeholder">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+								<div class="rating-bars room__complexity">
+									<div class="rating-bars__bars rating-bars__bars-3">
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
 									</div>
-									<div class="rating-icons__active">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+									<div class="rating-bars__numbers">
+										<span class="rating-bars__number-current">3</span>
+										<div class="rating-bars__number-overall">5</div>
 									</div>
 								</div>
 								<!-- Rating / End -->
@@ -431,14 +461,14 @@
 										<i class="icon-clock"></i> 120
 									</div>
 									<div class="room__meta-item">
-										<i class="ion-location"></i> OKC 2179
+										<i class="ion-location"></i> Oklahoma City 2179
 									</div>
 								</div>
 								<!-- Meta / End -->
 							</div>
 							<!-- Image -->
 							<figure class="room__img">
-								<a href="room-single.html"><img src="/assets/img/samples/room-grid-4-img6.jpg" alt=""></a>
+								<a href="room-single.html"><img src="assets/img/samples/room-grid-3-img6.jpg" alt=""></a>
 							</figure>
 							<!-- Image / End -->
 						</div>
@@ -446,16 +476,21 @@
 					<!-- Room #6 / End -->
 		
 					<!-- Room #7 -->
-					<div class="room col-sm-6 col-md-3 room--category-hard">
+					<div class="room col-sm-6 col-md-4 room--category-hard">
 						<div class="room__inner">
 							<div class="room__body">
 								<!-- Rating -->
-								<div class="room__complexity rating-icons">
-									<div class="rating-icons__placeholder">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+								<div class="rating-bars room__complexity">
+									<div class="rating-bars__bars rating-bars__bars-4">
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
 									</div>
-									<div class="rating-icons__active">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+									<div class="rating-bars__numbers">
+										<span class="rating-bars__number-current">4</span>
+										<div class="rating-bars__number-overall">5</div>
 									</div>
 								</div>
 								<!-- Rating / End -->
@@ -471,14 +506,14 @@
 										<i class="icon-clock"></i> 60
 									</div>
 									<div class="room__meta-item">
-										<i class="ion-location"></i> NY 3031
+										<i class="ion-location"></i> New York 3031
 									</div>
 								</div>
 								<!-- Meta / End -->
 							</div>
 							<!-- Image -->
 							<figure class="room__img">
-								<a href="room-single.html"><img src="/assets/img/samples/room-grid-4-img7.jpg" alt=""></a>
+								<a href="room-single.html"><img src="assets/img/samples/room-grid-3-img7.jpg" alt=""></a>
 							</figure>
 							<!-- Image / End -->
 						</div>
@@ -486,16 +521,21 @@
 					<!-- Room #7 / End -->
 		
 					<!-- Room #8 -->
-					<div class="room col-sm-6 col-md-3 room--category-easy">
+					<div class="room col-sm-6 col-md-4 room--category-easy">
 						<div class="room__inner">
 							<div class="room__body">
 								<!-- Rating -->
-								<div class="room__complexity rating-icons">
-									<div class="rating-icons__placeholder">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+								<div class="rating-bars room__complexity">
+									<div class="rating-bars__bars rating-bars__bars-2">
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
 									</div>
-									<div class="rating-icons__active">
-										<i class="ion-locked"></i><i class="ion-locked"></i>
+									<div class="rating-bars__numbers">
+										<span class="rating-bars__number-current">2</span>
+										<div class="rating-bars__number-overall">5</div>
 									</div>
 								</div>
 								<!-- Rating / End -->
@@ -511,14 +551,14 @@
 										<i class="icon-clock"></i> 60
 									</div>
 									<div class="room__meta-item">
-										<i class="ion-location"></i> LA 20198
+										<i class="ion-location"></i> Los Angeles 20198
 									</div>
 								</div>
 								<!-- Meta / End -->
 							</div>
 							<!-- Image -->
 							<figure class="room__img">
-								<a href="room-single.html"><img src="/assets/img/samples/room-grid-4-img8.jpg" alt=""></a>
+								<a href="room-single.html"><img src="assets/img/samples/room-grid-3-img8.jpg" alt=""></a>
 							</figure>
 							<!-- Image / End -->
 						</div>
@@ -526,16 +566,21 @@
 					<!-- Room #8 / End -->
 		
 					<!-- Room #9 -->
-					<div class="room col-sm-6 col-md-3 room--category-normal">
+					<div class="room col-sm-6 col-md-4 room--category-normal">
 						<div class="room__inner">
 							<div class="room__body">
 								<!-- Rating -->
-								<div class="room__complexity rating-icons">
-									<div class="rating-icons__placeholder">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+								<div class="rating-bars room__complexity">
+									<div class="rating-bars__bars rating-bars__bars-3">
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
 									</div>
-									<div class="rating-icons__active">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+									<div class="rating-bars__numbers">
+										<span class="rating-bars__number-current">3</span>
+										<div class="rating-bars__number-overall">5</div>
 									</div>
 								</div>
 								<!-- Rating / End -->
@@ -551,142 +596,22 @@
 										<i class="icon-clock"></i> 60
 									</div>
 									<div class="room__meta-item">
-										<i class="ion-location"></i> NY 3031
+										<i class="ion-location"></i> New York 3031
 									</div>
 								</div>
 								<!-- Meta / End -->
 							</div>
 							<!-- Image -->
 							<figure class="room__img">
-								<a href="room-single.html"><img src="/assets/img/samples/room-grid-4-img9.jpg" alt=""></a>
+								<a href="room-single.html"><img src="assets/img/samples/room-grid-3-img9.jpg" alt=""></a>
 							</figure>
 							<!-- Image / End -->
 						</div>
 					</div>
 					<!-- Room #9 / End -->
 		
-					<!-- Room #10 -->
-					<div class="room col-sm-6 col-md-3 room--category-easy">
-						<div class="room__inner">
-							<div class="room__body">
-								<!-- Rating -->
-								<div class="room__complexity rating-icons">
-									<div class="rating-icons__placeholder">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
-									</div>
-									<div class="rating-icons__active">
-										<i class="ion-locked"></i><i class="ion-locked"></i>
-									</div>
-								</div>
-								<!-- Rating / End -->
-								<!-- Title -->
-								<h2 class="room__title"><a href="room-single.html">Burlesque</a></h2>
-								<!-- Title / End -->
-								<!-- Meta -->
-								<div class="room__meta">
-									<div class="room__meta-item">
-										<i class="ion-person-stalker"></i> 3-5
-									</div>
-									<div class="room__meta-item">
-										<i class="icon-clock"></i> 60
-									</div>
-									<div class="room__meta-item">
-										<i class="ion-location"></i> BH 90210
-									</div>
-								</div>
-								<!-- Meta / End -->
-							</div>
-							<!-- Image -->
-							<figure class="room__img">
-								<a href="room-single.html"><img src="/assets/img/samples/room-grid-4-img3.jpg" alt=""></a>
-							</figure>
-							<!-- Image / End -->
-						</div>
-					</div>
-					<!-- Room #10 / End -->
-		
-					<!-- Room #11 -->
-					<div class="room col-sm-6 col-md-3 room--category-hard">
-						<div class="room__inner">
-							<div class="room__body">
-								<!-- Rating -->
-								<div class="room__complexity rating-icons">
-									<div class="rating-icons__placeholder">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
-									</div>
-									<div class="rating-icons__active">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
-									</div>
-								</div>
-								<!-- Rating / End -->
-								<!-- Title -->
-								<h2 class="room__title"><a href="room-single.html">Prison Break</a></h2>
-								<!-- Title / End -->
-								<!-- Meta -->
-								<div class="room__meta">
-									<div class="room__meta-item">
-										<i class="ion-person-stalker"></i> 4-6
-									</div>
-									<div class="room__meta-item">
-										<i class="icon-clock"></i> 60
-									</div>
-									<div class="room__meta-item">
-										<i class="ion-location"></i> NY 3031
-									</div>
-								</div>
-								<!-- Meta / End -->
-							</div>
-							<!-- Image -->
-							<figure class="room__img">
-								<a href="room-single.html"><img src="/assets/img/samples/room-grid-4-img4.jpg" alt=""></a>
-							</figure>
-							<!-- Image / End -->
-						</div>
-					</div>
-					<!-- Room #11 / End -->
-		
-					<!-- Room #12 -->
-					<div class="room col-sm-6 col-md-3 room--category-hard">
-						<div class="room__inner">
-							<div class="room__body">
-								<!-- Rating -->
-								<div class="room__complexity rating-icons">
-									<div class="rating-icons__placeholder">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
-									</div>
-									<div class="rating-icons__active">
-										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
-									</div>
-								</div>
-								<!-- Rating / End -->
-								<!-- Title -->
-								<h2 class="room__title"><a href="room-single.html">The Cure</a></h2>
-								<!-- Title / End -->
-								<!-- Meta -->
-								<div class="room__meta">
-									<div class="room__meta-item">
-										<i class="ion-person-stalker"></i> 2-3
-									</div>
-									<div class="room__meta-item">
-										<i class="icon-clock"></i> 60
-									</div>
-									<div class="room__meta-item">
-										<i class="ion-location"></i> LA 20198
-									</div>
-								</div>
-								<!-- Meta / End -->
-							</div>
-							<!-- Image -->
-							<figure class="room__img">
-								<a href="room-single.html"><img src="/assets/img/samples/room-grid-4-img2.jpg" alt=""></a>
-							</figure>
-							<!-- Image / End -->
-						</div>
-					</div>
-					<!-- Room #12 / End -->
-		
 				</div>
-				<!-- Rooms Grid - 4 cols / End  -->
+				<!-- Rooms Grid - 3 cols (No Margins) / End  -->
 		
 				<!-- Blog Navigation -->
 				<nav aria-label="Room navigation">
@@ -841,7 +766,7 @@
 		
 					<!-- Logo - Image Based -->
 					<div class="footer__logo footer__logo--img">
-						<a href="index.html"><img src="/assets/img/footer-logo.png" srcset="/assets/img/footer-logo@2x.png 2x" alt="Escapium Logo"></a>
+						<a href="index.html"><img src="assets/img/footer-logo.png" srcset="assets/img/footer-logo@2x.png 2x" alt="Escapium Logo"></a>
 					</div>
 					<!-- Logo - Image Based / End -->
 		
@@ -871,17 +796,17 @@
 	<!-- Javascript Files
 	================================================== -->
 	<!-- Vendors JS -->
-	<script src="/assets/vendor/jquery/jquery.min.js"></script>
-	<script src="/assets/vendor/jquery/jquery-migrate.min.js"></script>
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
 	
-	<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script defer src="/assets/font-icon/font-awesome/js/all.min.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script defer src="assets/font-icon/font-awesome/js/all.min.js"></script>
 	
 	<!-- Core JS -->
-	<script src="/assets/js/core.js"></script>
+	<script src="assets/js/core.js"></script>
 	
 	<!-- Template JS -->
-	<script src="/assets/js/init.js"></script>
+	<script src="assets/js/init.js"></script>
 
 </body>
 </html>

@@ -2,9 +2,9 @@ import { defineConfig } from "vite";
 import handlebars from "vite-plugin-handlebars";
 
 export default defineConfig({
-  root: ".", 
+  root: "source", 
   build: {
-    outDir: "build",          
+    outDir: "../build",          
     emptyOutDir: true
   },
   plugins: [
