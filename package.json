@@ -1,0 +1,21 @@
+{
+  "name": "mystery-owl",
+  "version": "2.0.0",
+  "description": "Mystery Owl – Escape Room Website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "vercel-build": "vite build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^6.0.0",
+    "sass": "^1.80.0",
+    "vite-plugin-handlebars": "^2.0.0"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}
