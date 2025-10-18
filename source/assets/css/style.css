@@ -5506,7 +5506,7 @@ body.search-active .search-form-control .search-form-toggler__icon {
 =============================================*/
 .page-heading {
   text-align: center;
-  background-image: url("../../assets/img/samples/slide-1.jpg");
+  /* background-image: url("../../assets/img/samples/slide-1.jpg"); */
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
