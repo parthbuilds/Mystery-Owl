@@ -73,15 +73,15 @@
 				<ul class="main-nav__list">
 					<li class=""><a href="index.html">home</a></li>
 					<li class=""><a href="page-about.html">about</a></li>
-					<li class="active"><a href="#">features</a>
+					<!--<li class=""><a href="#">features</a>
 						<ul class="main-nav__sub">
-							<li class="active"><a href="features-shortcodes.html">Shortcodes</a></li>
+							<li class=""><a href="features-shortcodes.html">Shortcodes</a></li>
 							<li class=""><a href="features-typography.html">Typography</a></li>
 							<li class=""><a href="features-pricing.html">Pricing Tables <span class="badge badge-danger">New</span></a></li>
 							<li class=""><a href="features-404.html">404 Error</a></li>
 							<li class=""><a href="features-faqs.html">FAQs</a></li>
 						</ul>
-					</li>
+					</li>-->
 					<li class=""><a href="rooms.html">rooms</a>
 						<ul class="main-nav__sub">
 							<li class=""><a href="room-1.html">Room 1</a></li>
@@ -168,11 +168,11 @@
 		<div class="page-heading jarallax" data-jarallax data-speed="0.2">
 			<div class="page-heading__inner">
 				<div class="container">
-					<h1 class="page-heading__title">Shortcodes</h1>
+					<h1 class="page-heading__title">Rooms</h1>
 					<ol class="breadcrumb page-heading__breadcrumb">
 						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-						<li class="breadcrumb-item"><a href="#">Features</a></li>
-						<li class="breadcrumb-item active" aria-current="page">Shortcodes</li>
+						<li class="breadcrumb-item"><a href="#">Rooms</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Grid 2 Cols</li>
 					</ol>
 				</div>
 			</div>
@@ -186,132 +186,241 @@
 		<div class="section-content">
 			<div class="container">
 		
-				<h2>Default Buttons</h2>
-				<p class="demo-btn-wrapper">
-					<button type="button" class="btn btn-lg btn-primary">Primary</button>
-					<button type="button" class="btn btn-lg btn-secondary">Secondary</button>
-					<button type="button" class="btn btn-lg btn-success">Success</button>
-					<button type="button" class="btn btn-lg btn-info">Info</button>
-					<button type="button" class="btn btn-lg btn-warning">Warning</button>
-					<button type="button" class="btn btn-lg btn-danger">Danger</button>
-					<button type="button" class="btn btn-lg btn-link">Link</button>
-				</p>
+				<!-- Filter -->
+				<ul class="filter js-filter list-unstyled">
+					<li class="filter__item"><button class="filter__link btn btn-primary" data-filter="*">All</button></li>
+					<li class="filter__item"><button class="filter__link btn btn-outline-secondary" data-filter=".room--category-easy">Easy</button></li>
+					<li class="filter__item"><button class="filter__link btn btn-outline-secondary" data-filter=".room--category-normal">Normal</button></li>
+					<li class="filter__item"><button class="filter__link btn btn-outline-secondary" data-filter=".room--category-hard">Hard</button></li>
+				</ul>
+				<!-- Filter / End -->
 		
-				<hr class="hr--xl">
+				<!-- Rooms Grid - 2 cols -->
+				<div class="row rooms rooms--grid js-rooms--grid">
 		
-				<h2>Outline Buttons</h2>
-				<p class="demo-btn-wrapper">
-					<button type="button" class="btn btn-lg btn-outline-primary">Primary</button>
-					<button type="button" class="btn btn-lg btn-outline-secondary">Secondary</button>
-					<button type="button" class="btn btn-lg btn-outline-success">Success</button>
-					<button type="button" class="btn btn-lg btn-outline-info">Info</button>
-					<button type="button" class="btn btn-lg btn-outline-warning">Warning</button>
-					<button type="button" class="btn btn-lg btn-outline-danger">Danger</button>
-				</p>
-		
-				<hr class="hr--xl">
-		
-				<div class="row">
-					<div class="col">
-						<h2>Sizes</h2>
-						<p>
-							<button class="btn btn-primary btn-lg mr-2" type="button">Large Button</button>
-							<button class="btn btn-secondary btn-lg" type="button">Large Button</button>
-						</p>
-						<p>
-							<button class="btn btn-primary mr-2" type="button">Default Button</button>
-							<button class="btn btn-secondary" type="button">Default Button</button>
-						</p>
-						<p>
-							<button class="btn btn-primary btn-sm mr-2" type="button">Small Button</button>
-							<button class="btn btn-secondary btn-sm" type="button">Small Button</button>
-						</p>
-					</div>
-					<div class="col">
-						<h2>Block</h2>
-						<p>
-							<button class="btn btn-lg btn-primary btn-block" type="button">Block Button</button>
-						</p>
-						<button class="btn btn-lg btn-secondary btn-block" type="button">Block Button</button>
-					</div>
-				</div>
-		
-				<hr class="hr--xl">
-		
-				<h2>Buttons with Icons</h2>
-				<button class="btn btn-lg btn-primary mr-2" type="button"><i class="icon-arrow-right"></i> Primary</button>
-				<button class="btn btn-lg btn-secondary mr-2" type="button"><i class="icon-login"></i> Secondary</button>
-				<button class="btn btn-lg btn-success mr-2" type="button"><i class="icon-check"></i> Success</button>
-				<button class="btn btn-lg btn-info mr-2" type="button"><i class="icon-info"></i> Info</button>
-				<button class="btn btn-lg btn-warning mr-2" type="button"><i class="icon-exclamation"></i> Warning</button>
-				<button class="btn btn-lg btn-danger mr-2" type="button"><i class="icon-energy"></i> Danger</button>
-		
-				<hr class="hr--xl">
-		
-				<h2>Icobox</h2>
-				<div class="row">
-					<div class="col-md-4">
-						<!-- Icobox -->
-						<div class="icobox">
-							<div class="icobox__icon-wrapper">
-								<div class="icobox__icon">
-									<i class="icon-lock"></i>
+					<!-- Room #1 -->
+					<div class="room col-md-6 room--category-normal">
+						<div class="room__inner">
+							<!-- Badge -->
+							<div class="room__badge room__badge--secondary" title="Upcoming">
+								<i class="fas fa-history"></i>
+							</div>
+							<!-- Badge / End -->
+							<div class="room__body">
+								<!-- Rating -->
+								<div class="room__complexity rating-icons">
+									<div class="rating-icons__placeholder">
+										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+									</div>
+									<div class="rating-icons__active">
+										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+									</div>
 								</div>
-							</div>
-							<h3 class="icobox__title">You Are Locked In</h3>
-							<div class="icobox__desc">
-								You will bring nothing in, but the escape room will be filled with useful and sometimes irrelevant objects.
-							</div>
-						</div>
-						<!-- Icobox / End -->
-					</div>
-					<div class="col-md-4">
-						<!-- Icobox -->
-						<div class="icobox">
-							<div class="icobox__icon-wrapper">
-								<div class="icobox__icon">
-									<i class="icon-clock"></i>
+								<!-- Rating / End -->
+								<!-- Title -->
+								<h2 class="room__title"><a href="room-single.html">The Cursed Baasement!</a></h2>
+								<!-- Title / End -->
+								<!-- Meta -->
+								<div class="room__meta">
+									<div class="room__meta-item">
+										<i class="ion-person-stalker"></i> 2-3
+									</div>
+									<div class="room__meta-item">
+										<i class="icon-clock"></i> 60
+									</div>
+									<div class="room__meta-item">
+										<i class="ion-location"></i> New York 3031
+									</div>
 								</div>
+								<!-- Meta / End -->
 							</div>
-							<h3 class="icobox__title">The Clock Is Ticking…</h3>
-							<div class="icobox__desc">
-								Can you puzzle your way to the intriguing conclusion and escape the room in 60 minutes?
-							</div>
+							<!-- Image -->
+							<figure class="room__img">
+								<a href="room-single.html"><img src="assets/img/samples/room-grid-2-img1.jpg" alt=""></a>
+							</figure>
+							<!-- Image / End -->
 						</div>
-						<!-- Icobox / End -->
 					</div>
-					<div class="col-md-4">
-						<!-- Icobox -->
-						<div class="icobox">
-							<div class="icobox__icon-wrapper">
-								<div class="icobox__icon">
-									<i class="icon-chemistry"></i>
+					<!-- Room #1 / End -->
+		
+					<!-- Room #2 -->
+					<div class="room col-md-6 room--category-hard">
+						<div class="room__inner">
+							<div class="room__body">
+								<!-- Rating -->
+								<div class="room__complexity rating-icons">
+									<div class="rating-icons__placeholder">
+										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+									</div>
+									<div class="rating-icons__active">
+										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+									</div>
 								</div>
+								<!-- Rating / End -->
+								<!-- Title -->
+								<h2 class="room__title"><a href="room-single.html">The Lost Treasure Quest</a></h2>
+								<!-- Title / End -->
+								<!-- Meta -->
+								<div class="room__meta">
+									<div class="room__meta-item">
+										<i class="ion-person-stalker"></i> 2-3
+									</div>
+									<div class="room__meta-item">
+										<i class="icon-clock"></i> 60
+									</div>
+									<div class="room__meta-item">
+										<i class="ion-location"></i> New York 3031
+									</div>
+								</div>
+								<!-- Meta / End -->
 							</div>
-							<h3 class="icobox__title">Feel The Atmosphere</h3>
-							<div class="icobox__desc">
-								The rooms is built to create an authentic experience with a fun atmosphere, strict attention to detail.
-							</div>
+							<!-- Image -->
+							<figure class="room__img">
+								<a href="room-single.html"><img src="assets/img/samples/room-grid-2-img2.jpg" alt=""></a>
+							</figure>
+							<!-- Image / End -->
 						</div>
-						<!-- Icobox / End -->
 					</div>
-				</div>
+					<!-- Room #2 / End -->
 		
-				<hr class="hr--xl">
+					<!-- Room #3 -->
+					<div class="room col-md-6 room--category-hard">
+						<div class="room__inner">
+							<div class="room__body">
+								<!-- Rating -->
+								<div class="room__complexity rating-icons">
+									<div class="rating-icons__placeholder">
+										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+									</div>
+									<div class="rating-icons__active">
+										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+									</div>
+								</div>
+								<!-- Rating / End -->
+								<!-- Title -->
+								<h2 class="room__title"><a href="room-single.html">Wizards’ Final Trial</a></h2>
+								<!-- Title / End -->
+								<!-- Meta -->
+								<div class="room__meta">
+									<div class="room__meta-item">
+										<i class="ion-person-stalker"></i> 4-6
+									</div>
+									<div class="room__meta-item">
+										<i class="icon-clock"></i> 60
+									</div>
+									<div class="room__meta-item">
+										<i class="ion-location"></i> New York 3031
+									</div>
+								</div>
+								<!-- Meta / End -->
+							</div>
+							<!-- Image -->
+							<figure class="room__img">
+								<a href="room-single.html"><img src="assets/img/samples/room-grid-2-img3.jpg" alt=""></a>
+							</figure>
+							<!-- Image / End -->
+						</div>
+					</div>
+					<!-- Room #3 / End -->
 		
-				<h2>Alerts</h2>
-				<div class="alert alert-success" role="alert">
-					<strong>Well done!</strong> You successfully read this important alert message.
+					<!-- Room #4 -->
+					<div class="room col-md-6 room--category-normal">
+						<div class="room__inner">
+							<!-- Badge -->
+							<div class="room__badge" title="Closing">
+								<i class="far fa-clock"></i>
+							</div>
+							<!-- Badge / End -->
+							<div class="room__body">
+								<!-- Rating -->
+								<div class="room__complexity rating-icons">
+									<div class="rating-icons__placeholder">
+										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+									</div>
+									<div class="rating-icons__active">
+										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+									</div>
+								</div>
+								<!-- Rating / End -->
+								<!-- Title -->
+								<h2 class="room__title"><a href="room-single.html">Operation Unstoppable Train</a></h2>
+								<!-- Title / End -->
+								<!-- Meta -->
+								<div class="room__meta">
+									<div class="room__meta-item">
+										<i class="ion-person-stalker"></i> 3-5
+									</div>
+									<div class="room__meta-item">
+										<i class="icon-clock"></i> 60
+									</div>
+									<div class="room__meta-item">
+										<i class="ion-location"></i> New York 3031
+									</div>
+								</div>
+								<!-- Meta / End -->
+							</div>
+							<!-- Image -->
+							<figure class="room__img">
+								<a href="room-single.html"><img src="assets/img/samples/room-grid-2-img4.jpg" alt=""></a>
+							</figure>
+							<!-- Image / End -->
+						</div>
+					</div>
+					<!-- Room #4 / End -->
+		
+					<!-- Room #5 -->
+					<div class="room col-md-6 room--category-easy">
+						<div class="room__inner">
+							<div class="room__body">
+								<!-- Rating -->
+								<div class="room__complexity rating-icons">
+									<div class="rating-icons__placeholder">
+										<i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i><i class="ion-locked"></i>
+									</div>
+									<div class="rating-icons__active">
+										<i class="ion-locked"></i><i class="ion-locked"></i>
+									</div>
+								</div>
+								<!-- Rating / End -->
+								<!-- Title -->
+								<h2 class="room__title"><a href="room-single.html">Mission Space Station</a></h2>
+								<!-- Title / End -->
+								<!-- Meta -->
+								<div class="room__meta">
+									<div class="room__meta-item">
+										<i class="ion-person-stalker"></i> 2-3
+									</div>
+									<div class="room__meta-item">
+										<i class="icon-clock"></i> 60
+									</div>
+									<div class="room__meta-item">
+										<i class="ion-location"></i> New York 3031
+									</div>
+								</div>
+								<!-- Meta / End -->
+							</div>
+							<!-- Image -->
+							<figure class="room__img">
+								<a href="room-single.html"><img src="assets/img/samples/room-grid-2-img5.jpg" alt=""></a>
+							</figure>
+							<!-- Image / End -->
+						</div>
+					</div>
+					<!-- Room #5 / End -->
 				</div>
-				<div class="alert alert-info" role="alert">
-					<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
-				</div>
-				<div class="alert alert-warning" role="alert">
-					<strong>Warning!</strong> Better check yourself, you're not looking too good.
-				</div>
-				<div class="alert alert-danger" role="alert">
-					<strong>Oh snap!</strong> Change a few things up and try submitting again.
-				</div>
+				<!-- Rooms Grid - 2 cols / End  -->
+		
+				<!-- Blog Navigation -->
+				<nav aria-label="Room navigation">
+					<ul class="pagination pagination--circle justify-content-center">
+						<li class="page-item active"><a class="page-link" href="#">1</a></li>
+						<!-- <li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+						<li class="page-item"><a class="page-link" href="#">10</a></li> -->
+					</ul>
+				</nav>
+				<!-- Blog Navigation / End -->
 		
 			</div>
 		</div>
